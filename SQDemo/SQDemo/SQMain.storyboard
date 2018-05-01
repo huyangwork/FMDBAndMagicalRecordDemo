@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hnG-bs-rIn">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="w61-Yh-mXS">
+            <objects>
+                <navigationController id="hnG-bs-rIn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dtU-A5-CDF">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="w4R-cI-VX3" kind="relationship" relationship="rootViewController" id="AUh-Rr-751"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nkd-6o-q4i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1145" y="615"/>
+        </scene>
+        <!--demo-->
+        <scene sceneID="JVF-J1-AGx">
+            <objects>
+                <viewController storyboardIdentifier="view" title="demo" id="w4R-cI-VX3" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="H9G-3K-D8Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMg-9r-Uk3">
+                                <rect key="frame" x="0.0" y="114" width="375" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="cBt-iV-h7d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="FMDB">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="31a-Ug-wCo" kind="push" id="Lqj-Lu-kuG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DCf-E5-mdM">
+                                <rect key="frame" x="0.0" y="352" width="375" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uCL-pL-bJA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="MagicalRecord">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="elm-zw-5Ri" kind="push" id="hGn-Dq-jc1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="617-GY-ES1" firstAttribute="trailing" secondItem="cMg-9r-Uk3" secondAttribute="trailing" id="3Lx-Vk-uHC"/>
+                            <constraint firstItem="cMg-9r-Uk3" firstAttribute="leading" secondItem="617-GY-ES1" secondAttribute="leading" id="8T6-lC-LLX"/>
+                            <constraint firstItem="DCf-E5-mdM" firstAttribute="trailing" secondItem="617-GY-ES1" secondAttribute="trailing" id="Sb1-pI-sBZ"/>
+                            <constraint firstItem="cMg-9r-Uk3" firstAttribute="top" secondItem="617-GY-ES1" secondAttribute="top" constant="50" id="Uul-1x-1SW"/>
+                            <constraint firstItem="DCf-E5-mdM" firstAttribute="top" secondItem="cMg-9r-Uk3" secondAttribute="bottom" constant="188" id="XCv-PT-tfh"/>
+                            <constraint firstItem="DCf-E5-mdM" firstAttribute="leading" secondItem="617-GY-ES1" secondAttribute="leading" id="cee-rf-3ck"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="617-GY-ES1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aMY-Ni-jSc"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pwO-MD-pc7" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242" y="615"/>
+        </scene>
+        <!--MagicalRecord-->
+        <scene sceneID="2X1-qW-g5X">
+            <objects>
+                <viewController storyboardIdentifier="MagicalRecord" title="MagicalRecord" id="elm-zw-5Ri" customClass="MagicalRecordViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dOV-Tc-RL2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fe6-pY-fjW">
+                                <rect key="frame" x="65" y="207" width="90" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.58431372550000005" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="增">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="add:" destination="elm-zw-5Ri" eventType="touchUpInside" id="2lj-We-GA0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hh7-tn-uHE">
+                                <rect key="frame" x="217" y="207" width="90" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.58431372550000005" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="删">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="delete:" destination="elm-zw-5Ri" eventType="touchUpInside" id="xhx-X5-nEA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14O-aO-I4e">
+                                <rect key="frame" x="217" y="379" width="90" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.58431372550000005" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="查">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="get:" destination="elm-zw-5Ri" eventType="touchUpInside" id="ZFv-iQ-LOD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbh-Xk-UhO">
+                                <rect key="frame" x="65" y="379" width="90" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.58431372550000005" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="改">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="change:" destination="elm-zw-5Ri" eventType="touchUpInside" id="nw0-wR-lRj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omR-kx-PFo">
+                                <rect key="frame" x="142" y="291" width="90" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.58431372550000005" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="清空">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clear:" destination="elm-zw-5Ri" eventType="touchUpInside" id="GV1-Pq-YH8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Ssj-z7-BJg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="K8D-4g-BNl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eon-yH-UGz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="894" y="866"/>
+        </scene>
+        <!--FMDB-->
+        <scene sceneID="1Zg-OP-gUl">
+            <objects>
+                <viewController storyboardIdentifier="fmdb" title="FMDB" id="31a-Ug-wCo" customClass="FMDBViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fsK-Wg-KiX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbR-xQ-nKH">
+                                <rect key="frame" x="80" y="233" width="90" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.58431372550000005" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="增">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="add:" destination="31a-Ug-wCo" eventType="touchUpInside" id="mSe-zL-LpP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lN6-gh-tvh">
+                                <rect key="frame" x="217" y="233" width="90" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.58431372550000005" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="删">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="delete:" destination="31a-Ug-wCo" eventType="touchUpInside" id="g64-7I-aK9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KOT-Pf-a3V">
+                                <rect key="frame" x="217" y="350" width="90" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.58431372550000005" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="查">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="get:" destination="31a-Ug-wCo" eventType="touchUpInside" id="F8M-TI-1Du"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soV-4T-Nse">
+                                <rect key="frame" x="80" y="350" width="90" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.58431372550000005" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="改">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="change:" destination="31a-Ug-wCo" eventType="touchUpInside" id="Osn-uw-6WC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t9d-Yc-x1N">
+                                <rect key="frame" x="24" y="133" width="90" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.58431372550000005" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="建表">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="creatTable:" destination="31a-Ug-wCo" eventType="touchUpInside" id="202-av-l9A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6I-CB-y4Q">
+                                <rect key="frame" x="151" y="133" width="90" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.58431372550000005" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="删表">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleTable:" destination="31a-Ug-wCo" eventType="touchUpInside" id="4jt-nX-73Z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P8V-KC-wST">
+                                <rect key="frame" x="269" y="133" width="90" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.58431372550000005" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="查询表">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="checkTable:" destination="31a-Ug-wCo" eventType="touchUpInside" id="2SP-fH-T8Y"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7TP-r0-Sht">
+                                <rect key="frame" x="80" y="448" width="90" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.58431372550000005" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="清空表数据">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cleanTable:" destination="31a-Ug-wCo" eventType="touchUpInside" id="MFN-pG-NTZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A2y-ca-Reh">
+                                <rect key="frame" x="217" y="448" width="90" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.58431372550000005" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="事务">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="siwuClick:" destination="31a-Ug-wCo" eventType="touchUpInside" id="5Ce-CC-Tm8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VvC-El-tje"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="akC-UU-Wgs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MLy-l6-s0U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="894" y="79"/>
+        </scene>
+    </scenes>
+</document>

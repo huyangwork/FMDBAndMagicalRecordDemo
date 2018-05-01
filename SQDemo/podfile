@@ -1,0 +1,5 @@
+platform :ios, ‘8.0’
+target 'SQDemo' do
+  pod 'FMDB'
+  pod'MagicalRecord','~>2.3.2'
+end
