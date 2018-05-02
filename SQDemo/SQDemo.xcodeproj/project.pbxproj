@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E9F4FD3EBAF133DE4909858F /* libPods-SQDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD835EAF144E0EB2E92A6886 /* libPods-SQDemo.a */; };
 		F96CBCC9209877ED00743D63 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F96CBCC7209877ED00743D63 /* Model.xcdatamodeld */; };
-		F96CBCCE2098799100743D63 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F96CBCCA2098799000743D63 /* Person+CoreDataProperties.m */; };
+		F96CBCE520989CD000743D63 /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = F96CBCE320989CD000743D63 /* Person+CoreDataProperties.m */; };
 		F99BCEF22096F45800CF28F6 /* MagicalRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F99BCEEE2096F45800CF28F6 /* MagicalRecordViewController.m */; };
 		F99BCEF32096F45800CF28F6 /* FMDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F99BCEF12096F45800CF28F6 /* FMDBViewController.m */; };
 		F99BCEF62096F46F00CF28F6 /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F99BCEF52096F46F00CF28F6 /* FMDBManager.m */; };
@@ -26,8 +26,11 @@
 		D40CB4B5D7D6BAF88A3A030C /* Pods-SQDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SQDemo/Pods-SQDemo.release.xcconfig"; sourceTree = "<group>"; };
 		D490E6CA47502B8EB3ABAAD8 /* Pods-SQDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SQDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SQDemo/Pods-SQDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		F96CBCC8209877ED00743D63 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
-		F96CBCCA2098799000743D63 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Person+CoreDataProperties.m"; path = "/Users/renpeng/Desktop/SQDemo/SQDemo/MagicalRecord/Person+CoreDataProperties.m"; sourceTree = "<absolute>"; };
-		F96CBCCC2098799100743D63 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Person+CoreDataProperties.h"; path = "/Users/renpeng/Desktop/SQDemo/SQDemo/MagicalRecord/Person+CoreDataProperties.h"; sourceTree = "<absolute>"; };
+		F96CBCDF20989AF300743D63 /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
+		F96CBCE020989CD000743D63 /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Person+CoreDataProperties.h"; path = "/Users/renpeng/FMDBAndMagicalRecordDemo/SQDemo/SQDemo/MagicalRecord/Person+CoreDataProperties.h"; sourceTree = "<absolute>"; };
+		F96CBCE320989CD000743D63 /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "Person+CoreDataProperties.m"; path = "/Users/renpeng/FMDBAndMagicalRecordDemo/SQDemo/SQDemo/MagicalRecord/Person+CoreDataProperties.m"; sourceTree = "<absolute>"; };
+		F96CBCE920989D1A00743D63 /* Person+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataClass.h"; sourceTree = "<group>"; };
+		F96CBCEA20989D1A00743D63 /* Person+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataClass.m"; sourceTree = "<group>"; };
 		F99BCEED2096F45800CF28F6 /* MagicalRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MagicalRecordViewController.h; sourceTree = "<group>"; };
 		F99BCEEE2096F45800CF28F6 /* MagicalRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MagicalRecordViewController.m; sourceTree = "<group>"; };
 		F99BCEF02096F45800CF28F6 /* FMDBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDBViewController.h; sourceTree = "<group>"; };
@@ -81,8 +84,10 @@
 				F99BCEED2096F45800CF28F6 /* MagicalRecordViewController.h */,
 				F99BCEEE2096F45800CF28F6 /* MagicalRecordViewController.m */,
 				F96CBCC7209877ED00743D63 /* Model.xcdatamodeld */,
-				F96CBCCC2098799100743D63 /* Person+CoreDataProperties.h */,
-				F96CBCCA2098799000743D63 /* Person+CoreDataProperties.m */,
+				F96CBCE020989CD000743D63 /* Person+CoreDataProperties.h */,
+				F96CBCE920989D1A00743D63 /* Person+CoreDataClass.h */,
+				F96CBCEA20989D1A00743D63 /* Person+CoreDataClass.m */,
+				F96CBCE320989CD000743D63 /* Person+CoreDataProperties.m */,
 			);
 			path = MagicalRecord;
 			sourceTree = "<group>";
@@ -226,13 +231,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F96CBCCE2098799100743D63 /* Person+CoreDataProperties.m in Sources */,
 				F99BCEF22096F45800CF28F6 /* MagicalRecordViewController.m in Sources */,
 				F9D5C6FE2096DE6500049049 /* ViewController.m in Sources */,
 				F99BCEF62096F46F00CF28F6 /* FMDBManager.m in Sources */,
 				F96CBCC9209877ED00743D63 /* Model.xcdatamodeld in Sources */,
 				F99BCEF32096F45800CF28F6 /* FMDBViewController.m in Sources */,
 				F9D5C7092096DE6D00049049 /* main.m in Sources */,
+				F96CBCE520989CD000743D63 /* Person+CoreDataProperties.m in Sources */,
 				F9D5C6FB2096DE6500049049 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,9 +429,10 @@
 		F96CBCC7209877ED00743D63 /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				F96CBCDF20989AF300743D63 /* Model 2.xcdatamodel */,
 				F96CBCC8209877ED00743D63 /* Model.xcdatamodel */,
 			);
-			currentVersion = F96CBCC8209877ED00743D63 /* Model.xcdatamodel */;
+			currentVersion = F96CBCDF20989AF300743D63 /* Model 2.xcdatamodel */;
 			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

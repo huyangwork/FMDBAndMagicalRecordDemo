@@ -206,4 +206,23 @@
     }];
 }
 
+
+/**添加字段/数据迁移*/
+- (void)dataMigrationWithTableName:(NSString *)tableName newAdded:(NSString *)newAdded block:(FMDBblock)block
+{
+//tableName:表名
+//newAdded:新加字段名
+    [_queue inDatabase:^(FMDatabase * _Nonnull db) {
+        if (![db columnExists:newAdded inTableWithName:tableName]){
+            NSString *sql = [NSString stringWithFormat:@"ALTER TABLE %@ ADD %@ INTEGER",tableName,newAdded];
+            BOOL success = [db executeUpdate:sql];
+            if (success) {
+                block(YES,@"字段添加成功");
+            } else {
+                block(NO,@"字段添加失败");
+            }
+        }
+    }];
+}
+
 @end

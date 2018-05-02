@@ -260,6 +260,17 @@
                                     <action selector="siwuClick:" destination="31a-Ug-wCo" eventType="touchUpInside" id="5Ce-CC-Tm8"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3np-32-U60">
+                                <rect key="frame" x="80" y="543" width="90" height="54"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.035294117649999998" green="0.58431372550000005" blue="0.23921568630000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="数据迁移">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="dataM:" destination="31a-Ug-wCo" eventType="touchUpInside" id="dd0-aK-drj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="VvC-El-tje"/>

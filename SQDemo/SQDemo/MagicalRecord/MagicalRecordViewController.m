@@ -25,6 +25,7 @@
     p.name = @"胡杨";
     p.sex = @"男";
     p.age = 18;
+    p.num = @"22222";
     [[NSManagedObjectContext MR_defaultContext] MR_saveToPersistentStoreAndWait];
 }
 - (IBAction)delete:(id)sender {
@@ -54,6 +55,10 @@
         Person *p = all[i];
         [dic setObject:p.name forKey:@"name"];
         [dic setObject:p.sex forKey:@"sex"];
+        if (p.num == nil) {
+            p.num = @"";
+        }
+        [dic setObject:p.num forKey:@"num"];
         [dic setObject:[NSString stringWithFormat:@"%lld",p.age] forKey:@"age"];
         [tmp addObject:dic];
     }

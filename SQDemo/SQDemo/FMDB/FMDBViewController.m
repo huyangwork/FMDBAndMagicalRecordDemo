@@ -74,6 +74,11 @@
             [dic setObject:age forKey:@"age"];
             NSString *sex = [rs stringForColumn:@"sex"];
             [dic setObject:sex forKey:@"sex"];
+//            NSString *num = [rs stringForColumn:@"num"];
+//            if (num == nil) {
+//                num = @"";
+//            }
+//            [dic setObject:num forKey:@"num"];
             [tmp addObject:dic];
         }
         NSLog(@"%@",tmp);
@@ -82,6 +87,12 @@
 - (IBAction)siwuClick:(id)sender {
     NSArray *sqlArray = @[[NSString stringWithFormat:@"INSERT INTO person ('name', 'age', 'sex') VALUES ('%@','%@','%@');", @"胡杨", @"20",@"男"],[NSString stringWithFormat:@"INSERT INTO person ('name', 'age', 'sex') VALUES ('%@','%@','%@');", @"胡杨", @"20",@"男"],[NSString stringWithFormat:@"INSERT INTO person ('name', 'age', 'sex') VALUES ('%@','%@','%@');", @"胡杨", @"20",@"男"],[NSString stringWithFormat:@"INSERT INTO person ('name', 'age', 'sex') VALUES ('%@','%@','%@');", @"胡杨", @"20",@"男"]];
     [[FMDBManager shareSingle] FMDBShiWuWithSqlArr:sqlArray block:^(BOOL isSuccess, id result) {
+        NSLog(@"%@",result);
+    }];
+}
+- (IBAction)dataM:(id)sender {
+    /**数据迁移*/
+    [[FMDBManager shareSingle] dataMigrationWithTableName:@"person" newAdded:@"num" block:^(BOOL isSuccess, id result) {
         NSLog(@"%@",result);
     }];
 }

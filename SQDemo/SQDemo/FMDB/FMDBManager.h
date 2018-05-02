@@ -32,4 +32,6 @@ typedef void(^FMDBblock)(BOOL isSuccess,id result);
 - (void)clearTableWithName:(NSString *)tableName block:(FMDBblock)block;
 /**事务*/
 - (void)FMDBShiWuWithSqlArr:(NSArray *)sqlArr block:(FMDBblock)block;
+/**添加字段/数据迁移*/
+- (void)dataMigrationWithTableName:(NSString *)tableName newAdded:(NSString *)newAdded block:(FMDBblock)block;
 @end

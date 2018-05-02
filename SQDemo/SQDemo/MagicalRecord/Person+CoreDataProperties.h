@@ -15,9 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<Person *> *)fetchRequest;
 
-@property (nullable, nonatomic, copy) NSString *name;
 @property (nonatomic) int64_t age;
+@property (nullable, nonatomic, copy) NSString *name;
 @property (nullable, nonatomic, copy) NSString *sex;
+@property (nullable, nonatomic, copy) NSString *num;
 
 @end
 

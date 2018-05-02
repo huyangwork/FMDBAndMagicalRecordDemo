@@ -14,8 +14,9 @@
 	return [NSFetchRequest fetchRequestWithEntityName:@"Person"];
 }
 
-@dynamic name;
 @dynamic age;
+@dynamic name;
 @dynamic sex;
+@dynamic num;
 
 @end
